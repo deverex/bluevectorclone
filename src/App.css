@@ -1,33 +1,146 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.showcase {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+.showcase a {
+  text-decoration: none;
   color: white;
+  text-decoration: underline;
+  transition-duration: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.showcase a:hover {
+  font-size: 1.1rem;
+  color: #bbb;
+  text-shadow: 2px 5px 5px #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.showcase:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  transition-duration: 0.4s;
+}
+
+.showcase1:before {
+  background: url(./img/1.jpg) no-repeat center center/cover;
+}
+.showcase2:before {
+  background: url(./img/2.jpg) no-repeat center center/cover;
+}
+.showcase3:before {
+  background: url(./img/3.jpg) no-repeat center center/cover;
+}
+.showcase4:before {
+  background: url(./img/4.jpg) no-repeat center center/cover;
+}
+.showcase5:before {
+  background: url(./img/5.jpg) no-repeat center center/cover;
+}
+.showcase6:before {
+  background: url(./img/1.jpg) no-repeat center center/cover;
+}
+
+.showcase:hover::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.showcase .showcase-content {
+  z-index: 1;
+}
+
+.showcase .showcase-content p {
+  margin-bottom: 1rem;
+}
+
+#send-button {
+  color: #3498db;
+  background: transparent;
+  padding: 1% 2%;
+  border-radius: 20px;
+}
+
+#send-button:hover {
+  color: #fff;
+  background: #3498db;
+}
+
+.icon {
+  border-radius: 50%;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+.read-more {
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  text-decoration: underline;
+  transition-duration: 0.5s;
+}
+
+.read-more:hover {
+  font-size: 1.1rem;
+  color: #bbb;
+  text-shadow: 2px 5px 5px #000;
+}
+
+.modal-body {
+  padding: 0px !important;
+  min-width: 100vw;
+  min-height: 99vh !important;
+}
+
+.modal {
+  padding: 0px !important;
+}
+
+.modal-open {
+  margin: 0px;
+  padding: 0px !important;
+}
+
+.modal-dialog {
+  margin: 0 !important;
+  min-width: 100vw;
+}
+
+.no-mp {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.img-w {
+  width: 100%;
+}
+
+.modal-header {
+  border: 0px;
 }
