@@ -144,3 +144,14 @@
 .modal-header {
   border: 0px;
 }
+
+.icon-round {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: #3a3a3a;
+}
+
+.fa-angle-up {
+  color: #fff;
+}

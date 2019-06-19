@@ -10,6 +10,7 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
 import "./App.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Accolades />
       <ContactForm />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
